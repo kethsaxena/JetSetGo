@@ -95,6 +95,67 @@
 1. Export results to **PDF** and **CSV**.  
 1. Share-ready visual outputs.  
 
+
+### 11. Metric Units Reference
+
+1. **Vehicle Configurator & Editor**
+   1. Dry mass, propellant mass, payload mass → **kilograms (kg)**
+   1. Tank volumes → **liters (L)** or **cubic meters (m³)**
+   1. Stage dimensions → **meters (m)**
+   1. Forces/thrust → **Newtons (N)**
+
+1. **Mass & Performance Budgets**
+   1. Δv per stage → **meters per second (m/s)**
+   1. Gross/inert mass → **kg**
+   1. Center-of-gravity → **meters from reference point**
+
+1. **Propulsion Tools**
+   1. ISP → **seconds (s)**
+   1. Thrust → **N**
+   1. Mass flow → **kg/s**
+
+1. **Trajectory & Ascent Simulation**
+   1. Altitude → **meters (m)**
+   1. Velocity → **m/s**
+   1. Acceleration → **m/s²**
+   1. Time → **seconds (s)**
+
+1. **Aerodynamics**
+   1. Drag coefficient (dimensionless)
+   1. Atmospheric density → **kg/m³**
+   1. Reference areas → **m²**
+
+1. **Thermal & Environment Checks**
+   1. Temperature → **Kelvin (K)** or **°C**
+   1. Heat flux → **W/m²**
+
+1. **Cost & Reliability Models**
+   1. Cost → can remain in **USD** or local currency
+   1. Mass fractions remain dimensionless ratios
+
+
+## ✨ Project Structure
+
+launch_vehicle_app/
+│── app.py                 # Main entrypoint
+│── config.py              # Global settings/config
+│── core/
+│   ├── __init__.py
+│   ├── propulsion.py      # Propulsion modeling (engines, ISP, thrust curves)
+│   ├── aerodynamics.py    # Drag, lift, stability analysis
+│   ├── structures.py      # Structural mass & load calculations
+│   ├── staging.py         # Multi-stage performance
+│   ├── trajectory.py      # Ascent trajectory simulation
+│   ├── optimization.py    # Stage optimization, payload maximization
+│── data/
+│   ├── vehicle_configs/   # Example JSON/YAML configs
+│   ├── results/           # Output files (CSV, JSON, plots)
+│── utils/
+│   ├── __init__.py
+│   ├── math_helpers.py    # Common equations
+│   ├── plotting.py        # Matplotlib/Plotly visualizations
+│   ├── fileio.py          # Read/write configs & results
+
 ## Author
 Developed by [Praketa Saxena](https://github.com/kethsaxena)
 
