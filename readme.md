@@ -136,24 +136,24 @@
 
 ## ✨ Project Structure
 launch_vehicle_app/
-├── app.py # Main entrypoint
-├── config.py # Global settings/config
-├── core/ # Core modules for vehicle modeling and simulation
-│ ├── init.py
-│ ├── propulsion.py # Propulsion modeling (engines, ISP, thrust curves)
-│ ├── aerodynamics.py # Drag, lift, stability analysis
-│ ├── structures.py # Structural mass & load calculations
-│ ├── staging.py # Multi-stage performance
-│ ├── trajectory.py # Ascent trajectory simulation
-│ ├── optimization.py # Stage optimization, payload maximization
-├── data/ # Input/output data
-│ ├── vehicle_configs/ # Example JSON/YAML vehicle configurations
-│ ├── results/ # Output files (CSV, JSON, plots)
-├── utils/ # Utility/helper modules
-│ ├── init.py
-│ ├── math_helpers.py # Common equations
-│ ├── plotting.py # Matplotlib/Plotly visualizations
-│ ├── fileio.py # Read/write configs & results
+  app.py                 # Main entrypoint
+  config.py              # Global settings/config
+  core/                  # Core modules for vehicle modeling and simulation
+    __init__.py
+    propulsion.py        # Propulsion modeling (engines, ISP, thrust curves)
+    aerodynamics.py      # Drag, lift, stability analysis
+    structures.py        # Structural mass & load calculations
+    staging.py           # Multi-stage performance
+    trajectory.py        # Ascent trajectory simulation
+    optimization.py      # Stage optimization, payload maximization
+  data/                  # Input/output data
+    vehicle_configs/     # Example JSON/YAML vehicle configurations
+    results/             # Output files (CSV, JSON, plots)
+  utils/                 # Utility/helper modules
+    __init__.py
+    math_helpers.py      # Common equations
+    plotting.py          # Matplotlib/Plotly visualizations
+    fileio.py            # Read/write configs & results
 
 ## Author
 Developed by [Praketa Saxena](https://github.com/kethsaxena)
