@@ -135,8 +135,8 @@
 
 
 ## ✨ Project Structure
-launch_vehicle_app/
-  app.py                 # Main entrypoint
+- launch_vehicle_app/
+  - app.py                 # Main entrypoint
   config.py              # Global settings/config
   core/                  # Core modules for vehicle modeling and simulation
     __init__.py
