@@ -2,6 +2,22 @@
 *A comprehensive software suite for analysis and design of full-scale, multi-stage launch vehicle systems.*
 
 ---
+## ⚡ How to Run JetSetGo
+
+Follow these steps to set up and run the minimal JetSetGo CLI:
+
+1. **Create a virtual environment** (optional but recommended)  
+   ```
+    python -m venv .venvJSG
+   ```
+1. **Activate** (optional but recommended)  
+    ```
+    .venvJSG\Scripts\activate
+    ```
+1. ```pip install --upgrade pip setuptools wheel``
+1. ```pip install .```
+1. ```jetsetgo```
+---
 
 ## ✨ Features
 
