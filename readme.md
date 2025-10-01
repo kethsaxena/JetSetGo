@@ -19,6 +19,14 @@ Follow these steps to set up and run the minimal JetSetGo CLI:
 1. ```jetsetgo```
 ---
 
+- Satellite structures of the 
+- Aeroacoustic Noise 
+- RUPAC Launch Vehicle 
+- Launch Vehicle Demonstrator 
+
+## REQUIRMENTS
+### GUI 
+
 ## ✨ Features
 
 ### 1. Vehicle Configurator & Editor
