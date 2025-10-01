@@ -3,8 +3,6 @@
 
 ---
 ## ⚡ How to Run JetSetGo
-
-
 1. **Create a virtual environment** (optional but recommended)  
    ```
     python -m venv .venvJSG
@@ -21,7 +19,6 @@ Follow these steps to set up and run the minimal JetSetGo CLI to spawn a Single 
 Follow these steps to spawn a Multiple JETs
 1. ```pip install .```
 1. ```python spawn_jets.py```
-
 
 ## ✨ Features
 
