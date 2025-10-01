@@ -1,5 +1,9 @@
+
+from jetsetgo.jet import JetSetGo
+
 def main():
-    print("🚀 Let's JET Set Go! 🚀")
+    jet = JetSetGo(familyName="UAV Launch Vehicle")
+    print(f"{jet.name} Airborne")
 
 if __name__ == "__main__":
     main()

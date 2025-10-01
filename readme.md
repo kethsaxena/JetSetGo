@@ -4,7 +4,6 @@
 ---
 ## ⚡ How to Run JetSetGo
 
-Follow these steps to set up and run the minimal JetSetGo CLI:
 
 1. **Create a virtual environment** (optional but recommended)  
    ```
@@ -14,10 +13,15 @@ Follow these steps to set up and run the minimal JetSetGo CLI:
     ```
     .venvJSG\Scripts\activate
     ```
+Follow these steps to set up and run the minimal JetSetGo CLI to spawn a Single JET:
 1. ```pip install --upgrade pip setuptools wheel``
 1. ```pip install .```
 1. ```jetsetgo```
 ---
+Follow these steps to spawn a Multiple JETs
+1. ```pip install .```
+1. ```python spawn_jets.py```
+
 
 ## ✨ Features
 
