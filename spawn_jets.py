@@ -1,15 +1,32 @@
 import subprocess
+import argparse
 
+def start_instances(n: int):
+    processes = []
+
+    # Start N processes
+    for i in range(n):
+        p = subprocess.Popen(
+            ["jetsetgo"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        processes.append((i + 1, p))
+
+    # Collect outputs
+    for idx, p in processes:
+        out, err = p.communicate()
+        print(f"Started JetSetGo instance {idx} with PID: {p.pid}")
+        if out.strip():
+            print(f"Identity: {out.strip()}")
+        if err.strip():
+            print(f"Error: {err.strip()}")
 
 if __name__ == "__main__":
-    # Start two independent JetSetGo instances and capture their output
-    p1 = subprocess.Popen(['jetsetgo'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    p2 = subprocess.Popen(['jetsetgo'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    parser = argparse.ArgumentParser(description="Launch multiple JetSetGo instances")
+    parser.add_argument("num_jets", type=int, help="Number of JetSetGo instances to start")
+    args = parser.parse_args()
 
-    out1, err1 = p1.communicate()
-    out2, err2 = p2.communicate()
-
-    print(f"Started JetSetGo instance 1 with PID: {p1.pid}")
-    print(f"Identity: {out1.strip()}")
-    print(f"Started JetSetGo instance 2 with PID: {p2.pid}")
-    print(f"Identity: {out2.strip()}")
+    start_instances(args.num_jets)
+   
